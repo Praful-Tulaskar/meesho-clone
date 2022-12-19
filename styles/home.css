@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+/* this is color var */
+
+:root {
+    --color:rgb(255,20,147);
+    --border-color:rgb(210, 200, 200);
+}
+
+/* header start here */
+
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.containor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6vh 8vw;
+    border: 1px solid var(--border-color);
+    height: 90px;
+    position: sticky;
+}
+.logo{
+    color: var(--color);
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+.containor input{
+    width: 35vw;
+    height: 3.5rem;
+    border-radius: 10px;
+    border: transparent;
+    border: 1px solid var(--border-color);
+}
+.input{
+    position: relative;
+}
+/* .search1{
+    display: flex;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+} */
+.search{
+    /* display: block; */
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 18px;
+    left: 12px;
+    fill: var(--border-color);
+}
+
+/* header end here */
+
+
+/* .mobile{
+    display: block;
+    margin-top: .4rem;
+    margin-left: 2rem;
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box; */
+    /* border: 1px solid black; */
+/* } */
+
+
+
+.pointer{
+    cursor: pointer;
+}
+
+.hor-li{
+    padding-right: 3vw;
+    border-right: 1px solid var(--border-color);
+    
+}
+
+.Profile {
+    height:20px ;
+    width: 20px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.Cart{
+    height: 20px;
+    width: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+/* main section starting here */
+
+.menu-bar{
+    border: 1px solid rgb(227, 218, 218);
+    padding:0 2.3rem;
+}
+.menu-bar ul{
+    display: flex;
+    list-style: none;
+    margin: 1vw;
+    justify-content: space-evenly;
+    cursor: pointer;
+   font-size: 1.1rem;
+}
+
+
+.main-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3vh;
+    margin-top: 2rem;
+}
+.img-text{
+    font-size: 3rem;
+    padding-right: 3.5rem;
+    max-width: 400px;
+    margin-top: 2rem;
+    
+}
+.banner{
+    width: 50;
+    padding: 1rem 1rem 1rem 4vw;
+    background-color: rgb(249, 249, 249);
+
+}
+
+.flex-pay{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: .8rem 1rem;
+    background-color: rgb(255, 253, 253);
+    border-radius: 9%;
+}
+.flex-pay-text{
+    padding: 0rem .6rem;
+    border-right: 1px solid black;
+
+}
+
+
+.dwn-btn{
+    padding: 1rem;
+    margin: 1rem 0;
+    width:75%;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 20px;
+    background-color: var(--color);
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+.banner-img{
+    height: 435px;
+    /* max-width: 40vw; */
+}
+.img{
+    display: none;
+}
+.top-cat{
+    margin: auto;
+    font-size: 3rem;
+    max-width: 600px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.for-sec{
+    margin: 1rem 2%;
+   
+}
+.banner-2{
+    /* background-image: url('/image/ba.webp'); */
+    position: relative;
+    width: 68vw;
+    height: 65vh;
+    margin: auto;
+    margin-top: 4vh;
+    background-color: rgb(220, 235, 235);
+
+}
+.fas{
+    position:absolute;
+    top: 5vh;
+    right: 10vw;
+    font-size: 4rem;
+}
+ .women-img img{
+    position: absolute;
+    width: 35%;
+    left: 1%;
+    bottom: 10%;
+    
+}
+ .men-img img{
+    position: absolute;
+    width: 30%;
+    right: 33%;
+    bottom: 10%;
+    
+}
+.kid-img img{
+    position: absolute;
+    width: 30%;
+    right: 1%;
+    bottom: 10%;
+
+}
+.banner-3{
+    /* background-image: url('/image/ba.webp'); */
+    position: relative;
+    width: 68vw;
+    height: 65vh;
+    margin: auto;
+    margin-top: 4vh;
+    background-color: rgb(220, 235, 235);
+    overflow: hidden;
+
+}
+.beauty0{
+    left: 1vw;
+    top:50%;
+    position: absolute;
+}
+.beauty1{
+    width: 15vw;
+    right: 36vw;
+    top:20%;
+    position: absolute;
+}
+.beauty2{
+    width: 15vw;
+    right: 35vw;
+    bottom:2%;
+    position: absolute;
+}
+.beauty3{
+    width: 15vw;
+    right: 19vw;
+    top:20%;
+    position: absolute;
+}
+.beauty4{
+    width: 15vw;
+    right: 18vw;
+    bottom: 2%;
+    position: absolute;
+}
+.beauty5{
+    width: 15vw;
+    right: 3%;
+    top:20%;
+    position: absolute;
+    min-width: 4vw;
+    padding-right: 10%;
+}
+.beauty6{
+    width: 15vw;
+    right: 2%;
+    /* top:20%; */
+    position: absolute;
+    bottom: 2%;
+    padding-right: 10%;
+}
+.banner-4{
+    /* background-image: url('/image/ba.webp'); */
+    position: relative;
+    width: 68vw;
+    height: 65vh;
+    margin: auto;
+    margin-top: 4vh;
+    /* background-color: rgb(220, 235, 235); */
+
+}
+.banner-4{
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+/* .logo1{
+    width: 90px;
+    height: 150px;
+} */
+.blue-text{
+    position: absolute;
+    font-size: 3.5vw;
+    color: blue;
+    right: 12%;
+    top: 15px;
+}
+.red-text{
+    position: absolute;
+    font-size: 4vw;
+    color: red;
+    right: 12%;
+    top: 70px;
+    width: 74%;
+    text-align: end;
+
+}
+.go-logo{
+    position: absolute;
+    bottom: 6%;
+    right: 40%;
+    padding: 20px;
+    max-width: 100%;
+    min-width: 50%;
+}
+
+.ap-logo{
+    min-width: 50%;
+    position: absolute;
+    bottom: 6%;
+    right: -1%;
+    padding: 20px;
+    max-width: 100%;
+}
+.banner-5 img{
+    width: 68.2vw;
+    height: 100%;
+    margin: 5rem 6rem;
+    border: 1px solid red;
+    transform: translate(14.5%, 30px);
+}
+
+/* this is .main-product-start */
+.main-product-start{
+    padding:0 5%;
+}
+.pro{
+    font-size: 2rem;
+    margin:2% 10%;
+    text-align: left;
+}
+.flex-pro{
+    display: flex;
+    justify-content: center;
+}
+.right-flex{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    
+}
+.box-pro{
+    max-width: 15vw;
+    border: 1px solid var(--border-color);
+}
+.box-pro img{
+    width: 100%;
+}
+.rel{
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 20px;
+    margin: .5rem ;
+}
+.more{
+    text-align: end;
+    font-size: .7rem;
+    margin: 0 2%;
+}
+.pro-detail{
+    color: var(--border-color);
+    margin: 0 2%;
+    margin-left: 10px;
+}
+.rate{
+    font-size: 1.5rem;
+    margin: 0 2%;
+    margin-left: 10px;
+}
+.rate span{
+    font-size: .8rem;
+    color: var(--border-color);
+    margin-left: 10px;
+}
+.free-del button{
+    margin: 5%;
+    background-color: rgb(235, 228, 228);
+    border-color: rgb(235, 228, 228);
+    border-radius: 10px;
+    margin-left: 10px;
+    padding:0 10px;
+    max-height: 40px;
+}
+.rev button{
+    background-color: rgb(105, 206, 105);
+    width: 40px;
+    color: white;
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.rev{
+    justify-content: space-around;
+}
+.rev span{
+    font-size: .8rem;
+    color: var(--border-color);
+    margin-top: 5px;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.item{
+    width: 100px;
+    height: 200px;
+}
+
+
+
+
+
+/* This is the footer */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    margin-top: 5rem;
+    background-color: whitesmoke;
+    padding: 5%;
+    font-size: 1.2vw;
+}
+.footer-col{
+    width: 20%;
+    padding: 0 10px;
+}
+.col1{
+    width: 35%;
+}
+.footer-col h2{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.footer-col h3{
+    font-size: 1.5rem;
+    padding: 10px 0px;
+}
+.footer-row{
+    padding: 10px 0px;
+    font-size: 1rem;
+}
+/* .svg-logoes{
+    display: inline-block;
+} */
+.svg-logo svg{
+    width: 13%;
+    margin:2% 2% 2% 0%;
+}
+.you svg{
+    /* padding: 20px 0px; */
+    width: 16%;
+}
+
+
+
+@media only screen and (max-width:810px){
+    .banner-img{
+        display: none;
+    }
+    .img{
+        display: none;
+    }
+    .banner-5{
+        margin-right:3rem;
+    }
+    .flex-pro{
+        flex-direction: column;
+    }
+    .right-flex{
+        display: grid;
+        grid-template-columns:  auto auto;
+        /* grid-template-rows: auto auto;  */
+        grid-gap: 15px;
+        
+     }
+     .pro{
+        text-align: center;
+     }
+     .left-flex{
+        width: 90vw;
+     }
+}  
