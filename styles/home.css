@@ -5,15 +5,15 @@
     font-size: 100%;
 }
 
-/* this is color var */
-
+<!-- /*===================================================== root color starting  ============================================*/ -->
+  
 :root {
     --color:rgb(255,20,147);
     --border-color:rgb(210, 200, 200);
 }
 
-/* header start here */
-
+<!-- /*===================================================== header starting  ============================================*/ -->
+  
 .sticky{
     position: sticky;
     top: 0;
@@ -30,6 +30,9 @@
     height: 90px;
     position: sticky;
 }
+
+
+
 .logo{
     color: var(--color);
     font-size: 3.5rem;
@@ -42,6 +45,16 @@
     border: transparent;
     border: 1px solid var(--border-color);
 }
+
+.containor input{
+    padding-left:30px;
+}
+
+.input:focus{
+    border:1px solid var(--border-color);
+}
+
+
 .input{
     position: relative;
 }
@@ -55,7 +68,7 @@
     height: 20px;
     width: 20px;
     position: absolute;
-    top: 18px;
+    top: 23px;
     left: 12px;
     fill: var(--border-color);
 }
@@ -63,20 +76,25 @@
 /* header end here */
 
 
-/* .mobile{
+.mobile{
     display: block;
     margin-top: .4rem;
     margin-left: 2rem;
     height: 20px;
     width: 20px;
-    box-sizing: border-box; */
-    /* border: 1px solid black; */
-/* } */
-
+    box-sizing: border-box;
+    
+ }
+.mob{
+    display: inline-block;
+}
 
 
 .pointer{
     cursor: pointer;
+}
+.pointer>.mob{
+    max-width: 1%;
 }
 
 .hor-li{
@@ -100,7 +118,6 @@
     margin-left: 40px;
 }
 
-/* main section starting here */
 
 .menu-bar{
     border: 1px solid rgb(227, 218, 218);
@@ -110,12 +127,15 @@
     display: flex;
     list-style: none;
     margin: 1vw;
-    justify-content: space-evenly;
+    justify-content: space-around;
     cursor: pointer;
-   font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 
-
+/*======================================================= main section starting her========================================= */
+main{
+    text-align: center;
+}
 .main-header{
     display: flex;
     justify-content: center;
@@ -344,12 +364,16 @@
 }
 .pro{
     font-size: 2rem;
-    margin:2% 10%;
+    margin:2% 3%;
     text-align: left;
 }
+
+
+/* today i am working here ================================ */
+
 .flex-pro{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .right-flex{
     display: grid;
@@ -364,18 +388,29 @@
 .box-pro img{
     width: 100%;
 }
-.rel{
+
+.left-flex{
+    /* background-color: red; */
     border: 1px solid var(--border-color);
-    padding: 1.5rem;
-    font-size: 1.8rem;
     border-radius: 20px;
-    margin: .5rem ;
+
 }
+
+.rel{
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem;
+    font-size: 1.8rem;
+    margin: .5rem ;
+    margin-bottom: 30px;
+
+}
+
 .more{
     text-align: end;
     font-size: .7rem;
     margin: 0 2%;
 }
+
 .pro-detail{
     color: var(--border-color);
     margin: 0 2%;
@@ -418,10 +453,6 @@
     margin-top: 5px;
     
 }
-.grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
 .item{
     width: 100px;
     height: 200px;
@@ -429,6 +460,106 @@
 
 
 
+
+/* specu=ial for today************************************** */
+.cat-in-pro{
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    margin: 1.5rem;
+}
+
+.cat1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    /* font-size: 1.5rem; */
+    
+}
+
+.input{
+    max-width: 60%;
+    /* border: 1px solid var(--border-color); */
+    margin-left: 1rem;
+    border-radius: 1rem;
+    padding: 6px;
+}
+input{
+    border: transparent;
+
+}
+
+input:focus{
+    border: transparent;
+}
+
+.cheak{
+    padding: 1rem;
+    margin-left: 10px;
+}
+checkbox{
+    font-size: 1.4rem;
+
+}
+
+label{
+    margin-left: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.genders{
+    margin: 1rem;
+    padding: 10px;
+    box-shadow: 0px 1px  var(--border-color);
+}
+
+.gender{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.gender svg{
+    width: 16px;
+    position:absolute;
+    right: 1rem;
+    cursor: pointer;
+    
+}
+.genders button{
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 5px 8px;
+    background: transparent;
+    margin: .5rem;
+}
+
+#fabric{
+    width: 100px;
+}
+.cheak{
+    position: relative;
+}
+
+.cheak svg{
+    width: 16px;
+    position:absolute;
+    right: 1rem;
+    cursor: pointer;
+    
+}
+
+
+/* #fabric{
+    width: 95%;
+    border: transparent;
+    cursor: pointer;
+    padding:0 50px;
+    margin: auto;
+    font-size: 1rem;
+} */
 
 
 /* This is the footer */
@@ -439,12 +570,15 @@
     align-items:flex-start;
     margin-top: 5rem;
     background-color: whitesmoke;
-    padding: 5%;
+    padding: 2%;
     font-size: 1.2vw;
+    flex-wrap: wrap;
 }
 .footer-col{
     width: 20%;
     padding: 0 10px;
+    /* min-width: 100px; */
+    min-height: 150px;
 }
 .col1{
     width: 35%;
@@ -461,21 +595,51 @@
     padding: 10px 0px;
     font-size: 1rem;
 }
-/* .svg-logoes{
-    display: inline-block;
-} */
+
 .svg-logo svg{
     width: 13%;
     margin:2% 2% 2% 0%;
 }
 .you svg{
-    /* padding: 20px 0px; */
     width: 16%;
 }
 
+@media only screen and (max-width:1095px) and (min-width:510px) {
+    .right-flex{
+        display: grid;
+        grid-template-columns:  auto auto auto;
+        grid-gap: 15px;   
+        margin-top: 2rem;
+     }
+     .flex-pro{
+        flex-direction: column;
+     }
 
+     .box-pro{
+        max-width: 25vw;
+        border: 1px solid var(--border-color);
+    }
+    .banner-5{
+        display: none;
+    }.pro{
+        font-size: 2rem;
+        margin:2% 3%;
+        text-align: left;
+    }
 
-@media only screen and (max-width:810px){
+    .Cart{
+        display: none;
+     }
+     .Profile{
+        display: none;
+     }
+     .footer{
+        align-items: center;
+     }
+    
+}
+
+@media only screen and (max-width:610px){
     .banner-img{
         display: none;
     }
@@ -491,14 +655,38 @@
     .right-flex{
         display: grid;
         grid-template-columns:  auto auto;
-        /* grid-template-rows: auto auto;  */
-        grid-gap: 15px;
-        
+        grid-gap: 15px;   
+        margin-top: 2rem;
      }
-     .pro{
-        text-align: center;
-     }
+
+     .box-pro{
+        max-width: 50vw;
+        border: 1px solid var(--border-color);
+    }
+
+    .pro{
+        font-size: 2rem;
+        margin:2% 3%;
+        text-align: left;
+    }
      .left-flex{
         width: 90vw;
      }
+     .banner-5{
+        display: none;
+     }
+     .Cart{
+        display: none;
+     }
+     .Profile{
+        display: none;
+     }
+     .pointer{
+        display: none;
+     }
+     .footer{
+        flex-direction: column;
+        align-items: center;
+     }
+     
 }  
