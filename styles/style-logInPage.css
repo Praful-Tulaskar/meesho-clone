@@ -30,6 +30,7 @@
 
 .header-leftside img{
     width: 200px;
+    cursor: pointer;
 }
 
 .header-leftside input{
@@ -41,13 +42,19 @@
     margin-left: 20px;
 }
 
-/* .header-rightside{
-    padding: 0px 0px;
-} */
 
 .header-rightside i{
     font-size: 25px;
     color: rgb(77, 76, 76);
+    cursor: pointer;
+}
+
+.header-rightside i:hover{
+    color: rgb(255, 78, 152);
+}
+
+#download-btn:hover{
+    color: rgb(255, 78, 152);
 }
 
 .header-rightside p{
@@ -56,6 +63,7 @@
     color: rgb(77, 76, 76);
     padding: 35px 10px;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .header-rightside :nth-child(2){
@@ -196,6 +204,7 @@ main{
     border: none;
     border-radius: 5px;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 .terms-condition{
