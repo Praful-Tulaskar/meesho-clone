@@ -57,6 +57,10 @@
     color: rgb(255, 78, 152);
 }
 
+#download-btn:hover .dropdown{
+    display: block;
+}
+
 .header-rightside p{
     display: inline-block;
     font-size: 1.5rem;
@@ -69,6 +73,35 @@
 .header-rightside :nth-child(2){
     border-right: 1px solid rgba(150, 147, 147, 0.7);
     padding-right: 18px;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: rgb(77, 76, 76);
+    padding: 35px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    border: 1px solid black;
+    display: none;
+}
+
+#dropdown-item{
+    padding: 15px 5px;
+    background-color: white;  
+    border-radius: 5px;
+    color: black;
+}
+
+#dropdown-item img{
+    width: 178px;
+    left: 50px;
+    padding-right: 5px;
+    border-radius: 5px;
 }
 
 main{
