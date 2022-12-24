@@ -9,20 +9,78 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="/styles/style-logInPage.css">
 </head>
+
 <body>
+    
+    <!------------------------ HEADER SECTION ------------------------>
+    
     <div class="header">
+
+        <!------------------ LEFTSIDE OF HEADER ---------------------->
+
         <div class="header-leftside">
             <img src="/logo-1.jpg">
-            <input type="search" placeholder="Try Saree,Kurti or Search by Product Code">
+            <input type="search" placeholder="         Try Saree,Kurti or Search by Product Code">
             <i class="fa fa-search" aria-hidden="true"></i>
         </div>
+
+        <!------------------ RIGHTSIDE OF HEADER -------------------->
+
         <div class="header-rightside">
-            <i class="fa fa-mobile" aria-hidden="true"></i>
-            <p>Download App</p>
+            <i class="fa-solid fa-mobile-screen"></i>
+            <div id="download-btn">Download App
+                <div class="dropdown">
+                    <div id="dropdown-item">Download From</div>
+                    <div id="dropdown-item"><img src="/playStore-img.jpg"></div>
+                </div>
+            </div>
             <p>Become a Supplier</p>
         </div>
+
     </div>
+
+    <!----------------------- BODY SECTION ------------------------->
+
+    <main>
+        
+        <div class="sign-up-page">
+            <img src="/login page img.jpg">
+            
+            <div class="sign-up-detail">
+                <p>Sign Up to view your profile</p>
+                
+                <div>
+                    
+                    <div id="country-code">
+                        <p>Country</p>
+                        <p>IN +91</p>
+                    </div>
+                    
+                    <div id="mobile-No">
+                        <input type="tel" autocomplete="off">
+                        <label for="phone no">Phone Number</label>
+                        <span></span>                       
+                    </div>
+
+                </div>
+               
+                <div class="send-otp-btn">
+                    <button type="submit">Send OTP</button>
+                </div>
+
+            </div>
+            
+            <div class="terms-condition">
+                <p>&nbsp By continuing, you agree to Meesho’s</p>
+                <p><a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></p>
+            </div>
+
+        </div>
+        <script src="/scripts/logInPage.js"></script>
+    </main>
+
+
 </body>
 </html>
