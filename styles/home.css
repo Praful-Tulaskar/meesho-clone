@@ -10,6 +10,69 @@ body{
    overflow-x: hidden;
 }
 
+.account-profile{
+    width:100vw;
+    max-width: 415px;
+    position: fixed;
+    right: 0;
+    z-index: 3;
+    background-color: aliceblue;
+    min-height: 95vh;
+    display: none;
+}
+
+.account-profile-block{
+    display: block;
+}
+
+
+.account-h{
+    width: 100%;
+    border: 1px solid var(--border-color);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.acc-pro-user{
+    display: flex;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    align-items: center;
+}
+
+
+.mob-no{
+    padding-top: 5px;
+}
+
+.account-no{
+    height: 50px;
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.acc-pic{
+    cursor: pointer;
+    width: 30px;
+    width: 30px;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+    
+    /* display: block; */
+}
+
+
+
+
+
 /* ============================res header start================================ */
 
 .res-block{
@@ -29,8 +92,11 @@ body{
     background-color: aliceblue;
     top: 0;
     z-index: 2;
-    /* display: none; */
+    cursor: pointer;
 }
+
+
+
 
 .res-right-head{
     max-width: 25%;
@@ -227,17 +293,17 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
     box-sizing: border-box;
     padding: 10px;
     background-color: rgb(231, 234, 236);
     position: fixed;
     bottom: 0;
-    z-index: 2;
-    /* background-color: red; */
-    /* display: none; */
+    z-index: 3;
 }
+
+
 .res-bottom div{
+    cursor: pointer;
     height: 30px;
     width: 30px;
     margin-bottom: 20px;
@@ -697,13 +763,16 @@ main{
 }
 .box-pro img{
     width: 100%;
-    max-height: 120px;
+    max-height: 200px;
 }
 
 .left-flex{
     /* background-color: red; */
     border: 1px solid var(--border-color);
     border-radius: 20px;
+    min-height: 80vw;
+    max-height: 100vw;
+    /* max-height: fit-content; */
 
 }
 
@@ -825,17 +894,22 @@ label{
     margin: 1rem;
     padding: 10px;
     box-shadow: 0px 1px  var(--border-color);
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .gender{
     margin-bottom: 10px;
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    
 }
 
 .gender svg{
     width: 16px;
     position:absolute;
-    right: 1rem;
+    right: 0;
     cursor: pointer;
     
 }
@@ -845,6 +919,14 @@ label{
     padding: 5px 8px;
     background: transparent;
     margin: .5rem;
+    box-sizing: border-box;
+}
+
+.gender-drp{
+    display: none;
+}
+.gender-show{
+    display: block;
 }
 
 #fabric{
@@ -928,7 +1010,54 @@ label{
     max-width: 16%;
 }
 
+/* =========================Extra info======================= */
 
+
+
+
+.mobile-view-cat{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    background-color: aliceblue;
+    display: none;
+}
+
+
+.mobile-view-cat1{
+    display: block;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 3;
+    /* overflow-y: scroll; */
+}
+
+
+/* ========================== res js view =================== */
+
+.mobile-view-cat-part {
+    width: 20vw;
+    height: 100px;
+    padding: 20px;
+    /* padding: 20px; */
+    border: 1px solid var(--border-color);
+    text-align: center;
+
+}
+
+.mobile-view-cat-part:hover {
+    background-color: rgb(206, 212, 212);
+}
+
+.mobile-view-cat-part img{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+/* ============================responsive Web part================= */
  
 
  @media only screen and (max-width:822px) and (min-width:510px){
