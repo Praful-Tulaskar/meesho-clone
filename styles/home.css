@@ -1,17 +1,17 @@
-*{
+    * {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     box-sizing: border-box;
     font-size: 16px;
 }
 
-body{
-   width: 100%; 
-   overflow-x: hidden;
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.account-profile{
-    width:100vw;
+.account-profile {
+    width: 100vw;
     max-width: 415px;
     position: fixed;
     right: 0;
@@ -21,33 +21,46 @@ body{
     display: none;
 }
 
-.account-profile-block{
+.account-profile-block {
     display: block;
 }
 
-
-.account-h{
+.account-h {
     width: 100%;
     border: 1px solid var(--border-color);
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    
+    cursor: pointer;
 }
 
-.acc-pro-user{
+.account-h:hover{
+    background-color: antiquewhite;
+}
+
+
+.acc-pro-user:hover{
+    background-color: antiquewhite;
+}
+
+.acc-pro-user {
     display: flex;
     height: 50px;
     border: 1px solid var(--border-color);
     align-items: center;
+    cursor: pointer;
 }
 
-
-.mob-no{
+.mob-no {
     padding-top: 5px;
 }
 
-.account-no{
+.account-no:hover{
+    background-color: antiquewhite;
+}
+
+.account-no {
+    /* background-color: rebeccapurple; */
     height: 50px;
     width: 100%;
     border-collapse: collapse;
@@ -75,30 +88,28 @@ body{
 
 /* ============================res header start================================ */
 
-.res-block{
+.res-block {
     display: none;
 }
 
-
-
-.res-head{
+.res-head {
     height: 50px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;    
+    padding: 5px;
     position: sticky;
     background-color: aliceblue;
     top: 0;
     z-index: 2;
-    cursor: pointer;
+    /* position: fixed; */
+    /* margin-bottom: 10rem; */
+
+    /* cursor: pointer; */
 }
 
-
-
-
-.res-right-head{
+.res-right-head {
     max-width: 25%;
     display: flex;
     justify-content: space-between;
@@ -106,7 +117,7 @@ body{
     margin-right: 40px;
 }
 
-.head-meesho{
+.head-meesho {
     font-size: 1.35rem;
     font-weight: 600;
     margin-bottom: 7px;
@@ -114,21 +125,22 @@ body{
     color: var(--color);
 }
 
-.res-bar img{
+.res-bar img {
     height: 30px;
     width: 25px;
     cursor: pointer;
-    margin:7px 30px 7px 20px;
+    margin: 7px 30px 7px 20px;
     display: block;
 }
 
-.res-heart{
+.res-heart {
     height: 10px;
     width: 25px;
     padding-bottom: 24px;
     cursor: pointer;
 }
-.res-cart{
+
+.res-cart {
     margin-left: 40px;
     height: 10px;
     width: 25px;
@@ -139,7 +151,7 @@ body{
 
 /* ================================== res search ========================================== */
 
-.res-search{
+.res-search {
     height: 30px;
     margin: 10px auto;
     padding: 4px;
@@ -149,28 +161,25 @@ body{
     /* display: none; */
 }
 
-
-.res-search textarea{
+.res-search textarea {
     width: 100vw;
     height: 100%;
     /* border-style: none; */
     resize: none;
     /* outline: none; */
     border-color: transparent;
-
 }
-.res-search textarea:focus{
+
+.res-search textarea:focus {
     border-style: none;
     border-color: red;
     outline: none;
 }
 
 
-
 /* =============================== res location=================== */
 
-
-.res-loc{
+.res-loc {
     height: 40px;
     padding-left: 15px;
     padding-top: 5px;
@@ -179,8 +188,7 @@ body{
     /* display: none; */
 }
 
-
-.res-loc svg{
+.res-loc svg {
     height: 20px;
     width: 20px;
     padding-top: 5px;
@@ -189,38 +197,38 @@ body{
 
 /* ============================ res img circular============== */
 
-.res-img{
+.res-img {
     display: flex;
     align-items: center;
-    overflow-x:scroll;
+    overflow-x: scroll;
     /* display: none; */
 }
 
-.res-img::-webkit-scrollbar{
+.res-img::-webkit-scrollbar {
     display: none;
 }
 
-.res-img img{
+.res-img img {
     width: 60px;
     height: 60px;
     border: 1px solid black;
     border-radius: 50%;
-    margin:5px 7.5px;
+    margin: 5px 7.5px;
 }
 
-
-.res-img div{
-    margin:15px;
+.res-img div {
+    margin: 15px;
     text-align: center;
 }
 
-.res-one{
+.res-one {
     margin-left: 190rem;
 }
 
+
 /* ==============================rest option here================== */
 
-.res-opt{
+.res-opt {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -230,12 +238,13 @@ body{
     /* display: none; */
 }
 
-.res-cash{
+.res-cash {
     display: flex;
     align-items: center;
     /* margin: 10px; */
 }
-.res-cash img{
+
+.res-cash img {
     border: 1px solid black;
     width: 30px;
     height: 30px;
@@ -245,14 +254,16 @@ body{
     margin: 0 10px;
 }
 
+
 /* =============================== product and action btn here=========== */
-.res-product{
+
+.res-product {
     font-size: 1.5rem;
     margin: 1rem;
     /* display: none; */
 }
 
-.res-action-btn{
+.res-action-btn {
     display: flex;
     justify-content: space-between;
     border: 1px solid var(--border-color);
@@ -263,31 +274,30 @@ body{
     /* display: none; */
 }
 
-.sort{
+.sort {
     display: flex;
     cursor: pointer;
 }
 
-
-.sort img{
+.sort img {
     height: 20px;
     width: 20px;
-    margin:0 10px;
+    margin: 0 10px;
 }
-.sort div svg{
+
+.sort div svg {
     height: 18px;
     width: 18px;
-    margin:0 10px;
+    margin: 0 10px;
 }
+
 
 /* ============================responsive header cmplete======================= */
 
 
-
 /* =============================responsive bottm complete============================== */
 
-
-.res-bottom{
+.res-bottom {
     height: 60px;
     min-width: 100%;
     display: flex;
@@ -301,8 +311,7 @@ body{
     z-index: 3;
 }
 
-
-.res-bottom div{
+.res-bottom div {
     cursor: pointer;
     height: 30px;
     width: 30px;
@@ -310,45 +319,49 @@ body{
     margin-right: 20px;
     text-align: center;
 }
-.res-grid{
+
+.res-grid {
     margin-bottom: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
-.res-m-logo{
+
+.res-m-logo {
     font-size: 2rem;
     color: var(--color);
     padding-bottom: 20px;
 }
-.res-m-logo p{
+
+.res-m-logo p {
     font-size: 1rem;
     color: black;
 }
-.res-help{
+
+.res-help {
     margin-top: 10px;
 }
 
-.res-bottom div>img{
+.res-bottom div>img {
     height: 30px;
     width: 30px;
     margin-top: 7px;
 }
- .res-user {
+
+.res-user {
     width: 50px;
     height: 50px;
 }
 
-
-.res-bag, .res-user{
+.res-bag,
+.res-user {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-right: 20px;
 }
 
-.res-text{
+.res-text {
     margin-left: -10px;
 }
 
@@ -357,21 +370,39 @@ body{
     display: none;
 } */
 
+
 /* =============================responsive bottm complete============================== */
-
-
 
 
 /* <!-- ===================================================== root color starting  ============================================ --> */
 
 :root {
-    --color:rgb(255,20,147);
-    --border-color:rgb(210, 200, 200);
+    --color: rgb(255, 20, 147);
+    --border-color: rgb(210, 200, 200);
 }
 
-<!-- /*===================================================== header starting  ============================================*/ -->
-  
-.sticky{
+#input-head input{
+    width: 100%;
+    height: 30px;
+}
+
+#input-head{
+    width: 32vw;
+}
+
+
+#input-head .search svg{
+    position: absolute;
+    top: -10px;
+}
+
+#input-head input:focus{
+    border: transparent;
+    outline: transparent;
+}
+/*===================================================== header starting  ============================================*/
+
+.sticky {
     position: sticky;
     top: 0;
     background-color: white;
@@ -379,7 +410,7 @@ body{
     /* display: none; */
 }
 
-.containor{
+.containor {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -389,14 +420,13 @@ body{
     position: sticky;
 }
 
-
-
-.logo{
+.logo {
     color: var(--color);
     font-size: 3.5rem;
     cursor: pointer;
 }
-.containor input{
+
+.containor input {
     width: 35vw;
     height: 3.5rem;
     border-radius: 10px;
@@ -404,16 +434,17 @@ body{
     border: 1px solid var(--border-color);
 }
 
-.containor input{
-    padding-left:30px;
+
+
+.containor input {
+    padding-left: 30px;
 }
 
-.input:focus{
-    border:1px solid var(--border-color);
+.input:focus {
+    border: 1px solid var(--border-color);
 }
 
-
-.input{
+.input {
     position: relative;
 }
 /* .search1{
@@ -433,8 +464,7 @@ body{
 
 /* header end here */
 
-
-.mobile{
+.mobile {
     display: block;
     margin-top: .4rem;
     margin-left: 2rem;
@@ -443,45 +473,51 @@ body{
     box-sizing: border-box;
     
  }
-.mob{
+
+.mob {
     display: inline-block;
 }
 
-
-.pointer{
+.pointer {
     cursor: pointer;
 }
-.pointer>.mob{
+
+.pointer>.mob {
     max-width: 1%;
 }
 
-.hor-li{
+.hor-li {
     padding-right: 3vw;
     border-right: 1px solid var(--border-color);
-    
 }
 
 .Profile {
-    height:20px ;
+    height: 20px;
     width: 20px;
-    margin-left: 10px;
+    margin-left: -10px;
+    padding-left: 1px;
     margin-bottom: 6px;
     text-align: center;
+    
 }
 
-.Cart{
+.Profile1{
+    margin-left: 4px;
+}
+
+.Cart {
     height: 20px;
     width: 20px;
     margin-bottom: 20px;
     margin-left: 40px;
 }
 
-
-.menu-bar{
+.menu-bar {
     border: 1px solid rgb(227, 218, 218);
-    padding:0 2.3rem;
+    padding: 0 2.3rem;
 }
-.menu-bar ul{
+
+.menu-bar ul {
     display: flex;
     list-style: none;
     margin: 1vw;
@@ -490,32 +526,35 @@ body{
     font-size: 1.1rem;
 }
 
+
 /*======================================================= main section starting her========================================= */
-main{
+
+main {
     text-align: center;
 }
-.main-header{
+
+.main-header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem 3vh;
     margin-top: 2rem;
 }
-.img-text{
+
+.img-text {
     font-size: 3rem;
     padding-right: 3.5rem;
     max-width: 400px;
     margin-top: 2rem;
-    
 }
-.banner{
+
+.banner {
     width: 50;
     padding: 1rem 1rem 1rem 4vw;
     background-color: rgb(249, 249, 249);
-
 }
 
-.flex-pay{
+.flex-pay {
     margin: 2rem 0;
     display: flex;
     justify-content: space-between;
@@ -524,17 +563,23 @@ main{
     background-color: rgb(255, 253, 253);
     border-radius: 9%;
 }
-.flex-pay-text{
+
+
+.retun{
+  margin-left: 10px;
+}
+    
+
+
+.flex-pay-text {
     padding: 0rem .6rem;
     border-right: 1px solid black;
-
 }
 
-
-.dwn-btn{
+.dwn-btn {
     padding: 1rem;
     margin: 1rem 0;
-    width:75%;
+    width: 75%;
     padding: 1rem;
     font-size: 2rem;
     border-radius: 20px;
@@ -542,25 +587,69 @@ main{
     font-size: 1.5rem;
     color: aliceblue;
 }
-.banner-img{
+
+.banner-img {
     height: 435px;
     /* max-width: 40vw; */
 }
-.img{
+
+.img {
     display: none;
 }
-.top-cat{
+
+.top-cat {
     margin: auto;
     font-size: 3rem;
     max-width: 600px;
     text-align: center;
     /* border: 1px solid red; */
 }
-.for-sec{
-    margin: 1rem 2%;
-   
+
+.hr-lines:before{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: red;
+  }
+  .hr-lines{
+    position: relative;
+  }
+  .hr-lines{
+    position: relative;
+    /*  new lines  */
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  .hr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 120px;
+    background: red;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+
+
+.top-cat h2{
+    font-size: 2rem;
+    /* padding: 0 10px; */
+    /* border: 1px solid red; */
+    /* margin: 0; */
 }
-.banner-2{
+
+.for-sec {
+    margin: 1rem 2%;
+}
+
+.banner-2 {
     /* background-image: url('/image/ba.webp'); */
     position: relative;
     width: 68vw;
@@ -568,36 +657,37 @@ main{
     margin: auto;
     margin-top: 4vh;
     background-color: rgb(220, 235, 235);
-
 }
-.fas{
-    position:absolute;
+
+.fas {
+    position: absolute;
     top: 5vh;
     right: 10vw;
     font-size: 4rem;
 }
- .women-img img{
+
+.women-img img {
     position: absolute;
     width: 35%;
     left: 1%;
     bottom: 10%;
-    
 }
- .men-img img{
+
+.men-img img {
     position: absolute;
     width: 30%;
     right: 33%;
     bottom: 10%;
-    
 }
-.kid-img img{
+
+.kid-img img {
     position: absolute;
     width: 30%;
     right: 1%;
     bottom: 10%;
-
 }
-.banner-3{
+
+.banner-3 {
     /* background-image: url('/image/ba.webp'); */
     position: relative;
     width: 68vw;
@@ -606,46 +696,52 @@ main{
     margin-top: 4vh;
     background-color: rgb(220, 235, 235);
     overflow: hidden;
-
 }
-.beauty0{
+
+.beauty0 {
     left: 1vw;
-    top:50%;
+    top: 50%;
     position: absolute;
 }
-.beauty1{
+
+.beauty1 {
     width: 15vw;
     right: 36vw;
-    top:20%;
+    top: 20%;
     position: absolute;
 }
-.beauty2{
+
+.beauty2 {
     width: 15vw;
     right: 35vw;
-    bottom:2%;
+    bottom: 2%;
     position: absolute;
 }
-.beauty3{
+
+.beauty3 {
     width: 15vw;
     right: 19vw;
-    top:20%;
+    top: 20%;
     position: absolute;
 }
-.beauty4{
+
+.beauty4 {
     width: 15vw;
     right: 18vw;
     bottom: 2%;
     position: absolute;
 }
-.beauty5{
+
+.beauty5 {
     width: 15vw;
     right: 3%;
-    top:20%;
+    top: 20%;
     position: absolute;
     min-width: 4vw;
     padding-right: 10%;
 }
-.beauty6{
+
+.beauty6 {
     width: 15vw;
     right: 2%;
     /* top:20%; */
@@ -653,299 +749,316 @@ main{
     bottom: 2%;
     padding-right: 10%;
 }
-.banner-4{
-    /* background-image: url('/image/ba.webp'); */
-    /* position: relative; */
-    width: 68vw;
+
+.banner-4 {
+    background-image: url('/image/ba.webp');
+     /* position: relative;  */
+     width: 68vw;
     height: 65vh;
     margin: auto;
-    margin-top: 4vh;
-    /* border: 1px solid red; */
-    /* background-color: rgb(220, 235, 235); */
-
+    margin-top: 4vh; 
+    border: 1px solid red; 
+     background-color: rgb(220, 235, 235);
 }
-.banner-4{
+
+.banner-4 {
     max-width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
-    /* border: 1px solid red; */
-    /* justify-content: space-between; */
+
+
+    border: 1px solid red; 
+    justify-content: space-between;
 }
+
+
 /* .logo1{
     width: 90px;
     height: 150px;
 } */
-.blue-text{
-    position: absolute;
-    font-size: 3.5vw;
-    color: blue;
-    right: 12%;
-    top: 15px;
-}
-.red-text{
-    position: absolute;
-    font-size: 4vw;
-    color: red;
-    right: 12%;
-    top: 70px;
-    width: 74%;
-    text-align: end;
+    .blue-text {
+        position: absolute;
+        font-size: 3.5vw;
+        color: blue;
+        right: 12%;
+        top: 15px;
+    }
+    .red-text {
+        position: absolute;
+        font-size: 4vw;
+        color: red;
+        right: 12%;
+        top: 70px;
+        width: 74%;
+        text-align: end;
+    }
+    .go-logo {
+        position: absolute;
+        bottom: 1%;
+        right: 40%;
+        padding: 20px;
+        max-width: 100%;
+        min-width: 50%;
+        object-fit: cover;
+    }
+    .ap-logo {
+        min-width: 50%;
+        position: absolute;
+        /* bottom: 6%; */
+        bottom: 1%;
+        right: 0;
+        padding: 20px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .both-logo {
 
-}
-.go-logo{
-    position: absolute;
-    bottom: 1%;
-    right: 40%;
-    padding: 20px;
-    max-width: 100%;
-    min-width: 50%;
-    object-fit:cover;
-}
-
-.ap-logo{
-    min-width: 50%;
-    position: absolute;
-    /* bottom: 6%; */
-    bottom: 1%;
-    right: 0;
-    padding: 20px;
-    max-width: 100%;
-    object-fit:cover;
-}
-.both-logo{
-    /* position: absolute; */
-    bottom: 10px;
-    display: flex;
-    justify-content: flex-end;
-    border: 1px solid black;
-    /* width: 70%; */
-    margin: auto;
-    /* z-index: 1; */
-}
-.banner-5 img{
-    width: 68.2vw;
-    height: 100%;
-    margin: 5rem 6rem;
-    border: 1px solid red;
-    transform: translate(14.5%, 30px);
-}
-
-/* this is .main-product-start */
-.main-product-start{
-    padding:0 5%;
-}
-.pro{
-    font-size: 2rem;
-    margin:2% 3%;
-    text-align: left;
-}
-
-
-/* today i am working here ================================ */
-
-.flex-pro{
-    display: flex;
-    justify-content: space-between;
-}
-.right-flex{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 15px;
+        bottom: 10px;
+        display: flex;
+        border: 1px solid red;
+        justify-content: flex-end;
+        border: 1px solid black;
+        /* width: 70%; */
+        margin: auto;
+        /* z-index: 1; */
+    }
+    .banner-5 {
+        width: 68vw;
+        margin: 5rem auto;
+        background-image: url(/image/supplyBannerDesktop.webp);
+        height: 230px;
+        background-size: cover;
+        color: aliceblue;
+        border: 1px solid red;
+    }
     
-}
-.box-pro{
-    width: 15vw;
-    border: 1px solid var(--border-color);
-    max-height: 350px;
-    overflow: hidden;
-}
-.box-pro img{
-    width: 100%;
-    max-height: 200px;
-}
+    .banner-5 h1{
+        /* border: 1px solid red; */
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .banner-5 h5{
+        /* border: 1px solid red; */
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 1.2rem;
+    }
 
-.left-flex{
-    /* background-color: red; */
-    border: 1px solid var(--border-color);
-    border-radius: 20px;
-    min-height: 80vw;
-    max-height: 100vw;
-    /* max-height: fit-content; */
-
-}
-
-.rel{
-    border-bottom: 1px solid var(--border-color);
-    padding: 1rem;
-    font-size: 1.8rem;
-    margin: .5rem ;
-    margin-bottom: 30px;
-
-}
-
-.more{
-    text-align: end;
-    font-size: .7rem;
-    margin: 0 2%;
-}
-
-.pro-detail{
-    color: var(--border-color);
-    margin: 0 2%;
-    margin-left: 10px;
-}
-.rate{
-    font-size: 1.5rem;
-    margin: 0 2%;
-    margin-left: 10px;
-}
-.rate span{
-    font-size: .8rem;
-    color: var(--border-color);
-    margin-left: 10px;
-}
-.free-del button{
-    margin: 5%;
-    background-color: rgb(235, 228, 228);
-    border-color: rgb(235, 228, 228);
-    border-radius: 10px;
-    margin-left: 10px;
-    padding:0 10px;
-    max-height: 40px;
-}
-.rev button{
-    background-color: rgb(105, 206, 105);
-    width: 40px;
-    color: white;
-    border:none;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-.rev{
-    justify-content: space-around;
-}
-.rev span{
-    font-size: .8rem;
-    color: var(--border-color);
-    margin-top: 5px;
+    .banner-5-parent{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1.5rem 3.9rem;
+        /* border: 1px solid red; */
+    }
     
-}
-.item{
-    width: 100px;
-    height: 200px;
-}
-
-
-
-
-/* specu=ial for today************************************** */
-.cat-in-pro{
-    border-bottom: 1px solid var(--border-color);
-    padding: 1rem 0;
-    font-size: 1.2rem;
-    margin: 1.5rem;
-}
-
-.cat1{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    /* font-size: 1.5rem; */
+    .banner-5-child{
+        display: flex;
+        max-width: 160px;
+        border-right: 1px solid rgb(236, 230, 230);
+    }
     
-}
-
-.input{
-    max-width: 60%;
-    /* border: 1px solid var(--border-color); */
-    margin-left: 1rem;
-    border-radius: 1rem;
-    padding: 6px;
-}
-input{
-    border: transparent;
-
-}
-
-input:focus{
-    border: transparent;
-}
-
-.cheak{
-    padding: 1rem;
-    margin-left: 10px;
-}
-checkbox{
-    font-size: 1.4rem;
-
-}
-
-label{
-    margin-left: 10px;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-.genders{
-    margin: 1rem;
-    padding: 10px;
-    box-shadow: 0px 1px  var(--border-color);
-    box-sizing: border-box;
-    max-width: 100%;
-}
-
-.gender{
-    margin-bottom: 10px;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
     
-}
-
-.gender svg{
-    width: 16px;
-    position:absolute;
-    right: 0;
-    cursor: pointer;
-    
-}
-.genders button{
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 5px 8px;
-    background: transparent;
-    margin: .5rem;
-    box-sizing: border-box;
-}
-
-.gender-drp{
-    display: none;
-}
-.gender-show{
-    display: block;
-}
-
-#fabric{
-    width: 100px;
-}
-.cheak{
-    position: relative;
-}
-
-.cheak svg{
-    width: 16px;
-    position:absolute;
-    right: 1rem;
-    cursor: pointer;
-    
-}
+    .banner-5-child1{
+        padding:0px 15px;
+        
+    } 
 
 
-/* #fabric{
+
+    /* this is .main-product-start */
+    .main-product-start {
+        padding: 0 5%;
+    }
+    .pro {
+        font-size: 2rem;
+        margin: 2% 3%;
+        text-align: left;
+    }
+    /* today i am working here ================================ */
+    .flex-pro {
+        display: flex;
+        justify-content: space-between;
+    }
+    .right-flex {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 15px;
+    }
+    .box-pro {
+        width: 15vw;
+        border: 1px solid var(--border-color);
+        max-height: 350px;
+        overflow: hidden;
+    }
+    .box-pro img {
+        width: 100%;
+        max-height: 200px;
+    }
+    .left-flex {
+        /* background-color: red; */
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        min-height: 80vw;
+        max-height: 100vw;
+        /* max-height: fit-content; */
+    }
+    .rel {
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem;
+        font-size: 1.8rem;
+        margin: .5rem;
+        margin-bottom: 30px;
+    }
+    .more {
+        text-align: end;
+        font-size: .7rem;
+        margin: 0 2%;
+    }
+    .pro-detail {
+        color: var(--border-color);
+        margin: 0 2%;
+        margin-left: 10px;
+    }
+    .rate {
+        font-size: 1.5rem;
+        margin: 0 2%;
+        margin-left: 10px;
+    }
+    .rate span {
+        font-size: .8rem;
+        color: var(--border-color);
+        margin-left: 10px;
+    }
+    .free-del button {
+        margin: 5%;
+        background-color: rgb(235, 228, 228);
+        border-color: rgb(235, 228, 228);
+        border-radius: 10px;
+        margin-left: 10px;
+        padding: 0 10px;
+        max-height: 40px;
+    }
+    .rev button {
+        background-color: rgb(105, 206, 105);
+        width: 40px;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .rev {
+        justify-content: space-around;
+    }
+    .rev span {
+        font-size: .8rem;
+        color: var(--border-color);
+        margin-top: 5px;
+    }
+    .item {
+        width: 100px;
+        height: 200px;
+    }
+    /* ===========special for today************************************** */
+
+
+    .cat-in-pro {
+        border-bottom: 1px solid var(--border-color);
+         padding: 1rem 0;
+        font-size: 1.2rem; 
+        margin: 1.5rem; 
+    }
+    .cat1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 20px;
+    }
+    .input {
+        width: 200px;
+        border: 1px solid var(--border-color);
+        margin-left: 1rem;
+        border-radius: 1rem;
+        padding: 6px;
+    }
+
+    .input input{
+        width: 100%;
+        border: transparent;
+    }
+    input {
+        /* background-color: red; */
+        /* background-color: red; */
+        width: 15px;
+        height: 15px;
+        /* border: transparent; */
+    }
+    .input input:focus {
+        border: transparent;
+    }
+    .cheak {
+        padding: 1rem;
+        margin-left: 10px;
+    }
+    checkbox {
+        font-size: 1.4rem;
+    }
+    label {
+        margin-left: 10px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .genders {
+        margin: 1rem;
+        padding: 10px;
+        box-shadow: 0px 1px var(--border-color);
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    .gender {
+        margin-bottom: 10px;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .gender svg {
+        width: 16px;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+    .genders button {
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 5px 8px;
+        background: transparent;
+        margin: .5rem;
+        box-sizing: border-box;
+    }
+    .gender-drp {
+        display: none;
+    }
+    .gender-show {
+        display: block;
+    }
+    #fabric {
+        width: 100px;
+    }
+    .cheak {
+        position: relative;
+    }
+    .cheak svg {
+        width: 16px;
+        position: absolute;
+        right: 1rem;
+        cursor: pointer;
+    }
+    /* #fabric{
     width: 95%;
     border: transparent;
     cursor: pointer;
@@ -953,195 +1066,154 @@ label{
     margin: auto;
     font-size: 1rem;
 } */
-
-
-/* This is the footer */
-
-.footer{
-    display: flex;
-    justify-content: space-around;
-    align-items:flex-start;
-    margin-top: 5rem;
-    background-color: whitesmoke;
-    padding: 2%;
-    font-size: 1.2vw;
-    /* flex-wrap: wrap; */
-}
-
-
-
-.footer-col{
-    min-width: 18vw;
-    padding: 0 10px;
-    min-height: 150px;
-    margin-bottom: 4rem;
-}
-
-
-.col1{
-    width: 35%;
-}
-
-
-.footer-col h2{
-    font-size: 2rem;
-    padding-bottom: 20px;
-}
-
-
-
-.footer-col h3{
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-
-
-.footer-row{
-    padding: 10px 0px;
-    font-size: 1rem;
-}
-
-.svg-logo svg{
-    max-width: 13%;
-    margin:2% 2% 2% 0%;
-}
-.you svg{
-    max-width: 16%;
-}
-
-/* =========================Extra info======================= */
-
-
-
-
-.mobile-view-cat{
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-    background-color: aliceblue;
-    display: none;
-}
-
-
-.mobile-view-cat1{
-    display: block;
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index: 3;
-    /* overflow-y: scroll; */
-}
-
-
-/* ========================== res js view =================== */
-
-.mobile-view-cat-part {
-    width: 20vw;
-    height: 100px;
-    padding: 20px;
-    /* padding: 20px; */
-    border: 1px solid var(--border-color);
-    text-align: center;
-
-}
-
-.mobile-view-cat-part:hover {
-    background-color: rgb(206, 212, 212);
-}
-
-.mobile-view-cat-part img{
-    height: 30px;
-    width: 30px;
-}
-
-
-
-/* ============================responsive Web part================= */
+    /* This is the footer */
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 5rem;
+        background-color: whitesmoke;
+        padding: 2%;
+        font-size: 1.2vw;
+        /* flex-wrap: wrap; */
+    }
+    .footer-col {
+        min-width: 18vw;
+        padding: 0 10px;
+        min-height: 150px;
+        margin-bottom: 4rem;
+    }
+    .col1 {
+        width: 35%;
+    }
+    .footer-col h2 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+    .footer-col h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .footer-row {
+        padding: 10px 0px;
+        font-size: 1rem;
+    }
+    .svg-logo svg {
+        max-width: 13%;
+        margin: 2% 2% 2% 0%;
+    }
+    .you svg {
+        max-width: 16%;
+    }
+    /* =========================Extra info======================= */
+    .mobile-view-cat {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        background-color: aliceblue;
+        display: none;
+    }
+    .mobile-view-cat1 {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        /* overflow-y: scroll; */
+    }
+    /* ========================== res js view =================== */
+    .mobile-view-cat-part {
+        width: 20vw;
+        height: 100px;
+        padding: 20px;
+        /* padding: 20px; */
+        border: 1px solid var(--border-color);
+        text-align: center;
+    }
+    .mobile-view-cat-part:hover {
+        background-color: rgb(206, 212, 212);
+    }
+    .mobile-view-cat-part img {
+        height: 30px;
+        width: 30px;
+    }
+    /* ============================responsive Web part================= */
  
 
- @media only screen and (max-width:822px) and (min-width:510px){
-    .res-block{
-        display: block;
-     }
-    
-     .left-flex{
-        display: none;
-     }
 
+    @media only screen and (max-width:922px) and (min-width:510px) {
+        .res-block {
+            display: block;
+        }
+        .left-flex {
+            display: none;
+        }
+        .right-flex {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 15px;
+            margin-top: 2rem;
+        }
+        .box-pro {
+            min-width: 29vw;
+        }
+        .none {
+            display: none;
+        }
+        .pro {
+            display: none;
+        }
+        .footer {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
 
-     .right-flex{
-        display: grid;
-        grid-template-columns:  auto auto auto;
+    @media screen and (max-width:510px) {
+        .res-block {
+            display: block;
+        }
+        .left-flex {
+            display: none;
+        }
+        .right-flex {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 15px;
         grid-gap: 15px;   
-        margin-top: 2rem;
-     }
-
-     .box-pro{
-        min-width: 29vw;
-     }
-
-     
-
-     .none{
-        display: none;
-     }
-
-     .pro{
-        display: none;
-     }
-     
-     
-
-     .footer{
-        flex-wrap: wrap;
-        align-items: center;
-     }
-} 
-
-@media screen and (max-width:510px) {
-    
-    .res-block{
-        display: block;
-     }
-    
-     .left-flex{
-        display: none;
-     }
-
-
-     .right-flex{
-        display: grid;
-        grid-template-columns: auto auto;
+            grid-gap: 15px;
         grid-gap: 15px;   
-        margin-top: 2rem;
-     }
+            grid-gap: 15px;
+        grid-gap: 15px;   
+            grid-gap: 15px;
+        grid-gap: 15px;   
+            grid-gap: 15px;
+        grid-gap: 15px;   
+            grid-gap: 15px;
+        grid-gap: 15px;   
+            grid-gap: 15px;
+        grid-gap: 15px;   
+            grid-gap: 15px;
+        grid-gap: 15px;   
+            grid-gap: 15px;
+            margin-top: 2rem;
+        }
+        .box-pro {
+            min-width: 46vw;
+        }
+        .none {
+            display: none;
+        }
+        .pro {
+            display: none;
+        }
+        .footer {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .footer-col div {
+            max-width: 95vw;
+            /* min-width: 95vw; */
+        }
 
-     .box-pro{
-        min-width: 46vw;
-     }
-
-     
-
-     .none{
-        display: none;
-     }
-
-     .pro{
-        display: none;
-     }
-     
-
-     .footer{
-        flex-wrap: wrap;
-        align-items: center;
-     }
-
-     .footer-col div{
-        max-width: 95vw;
-        /* min-width: 95vw; */
-     }
-} 
-
-
-
+    }
