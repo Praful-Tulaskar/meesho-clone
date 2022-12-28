@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    background-color: white;
+    padding: 0px 15px;
+    border-bottom: 1px solid rgba(150, 147, 147, 0.7);
+}
+
+.header-leftside{
+    display: flex;
+    /* flex-wrap: wrap; */
+    position: relative;
+    padding: 5px 0px;
+}
+
+.header-leftside i{
+    font-size: 1.5rem;
+    color: rgba(150, 147, 147, 0.952);
+    position: absolute;
+    left: 240px;
+    top: 25px;
+}
+
+
+.header-leftside img{
+    width: 200px;
+    cursor: pointer;
+}
+
+.header-leftside input{
+    width: 500px;
+    font-size: 1.25rem;
+    padding: 18px 5px;
+    border-radius: 8px;
+    border-color: rgba(150, 147, 147, 0.7);
+    margin-left: 20px;
+}
+
+.header-rightside{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#download-btn{
+    position: relative;
+    font-size: 22px;
+    padding: 5px 20px;
+    color: rgba(27, 27, 27, 0.952);
+}
+
+#download-btn:hover{
+    color: rgb(255, 78, 152);
+}
+
+.header-rightside > div{
+    border-right: 1px solid rgba(150, 147, 147, 0.7);
+}
+
+.header-rightside > :nth-child(3){
+    border-right: none;
+}
+
+.header-rightside > :nth-child(2){
+    font-size: 25px;
+    padding: 5px 20px;
+    color: rgba(46, 46, 46, 0.952);
+}
+
+
+.dropdown{
+    position: absolute;
+    top: 170%;
+    width: 250px;
+    /* border: 0.5px solid rgb(158, 157, 157); */
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px rgb(158, 157, 157);
+    display: none;
+    background-color: white;
+}
+
+.dropdown :nth-child(1){
+    font-size: 25px;
+}
+
+.dropdown-item{
+    padding: 15px 5px;
+    background-color: white;  
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+}
+
+.dropdown-item img{
+    width: 200px;
+    left: 50px;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+
+#download-btn:hover .dropdown{
+    display: block;
+}
+
+#user-section{
+    display: flex;
+    padding: 20px 0;
+}
+
+#user-section > :nth-child(1){
+    position: relative;
+}
+
+.user-section-text{
+    font-size: 22px;
+    
+}
+
+.user-section-icon{
+    text-align: center;
+}
+
+.user-section-icon i{
+    font-size: 22px;
+}
+
+.user-profile-dropdown{
+    position: absolute;
+    top: 135%;
+    right: -80px;
+    border: 1px solid rgba(150, 147, 147, 0.7);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px rgb(158, 157, 157);
+    background-color: white;
+    display: none;
+}
+
+#user-section > :nth-child(1):hover .user-profile-dropdown{
+    display: block;
+}
+
+.user-profile-dropdown ul{
+    list-style: none;
+    line-height: 30px;
+    padding: 5px 20px;
+}
+
+.user-profile-dropdown ul > :nth-child(1){
+    font-size: 25px;
+    padding: 5px 0;
+}
+.user-profile-dropdown ul > :nth-child(4){
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.user-profile-dropdown ul> :nth-child(3){
+    border-bottom: 1px solid rgba(150, 147, 147, 0.7);
+}
+
+.user-profile-dropdown ul button{
+    width: 250px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 15px 30px;
+    color: white;
+    background-color: rgb(255, 78, 152);
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#user-profile{
+    text-align: center;
+    padding: 0 30px;
+}
+
+#cart{
+    padding: 0 20px;
+}
+
+#user-profile :hover{
+    color: rgb(255, 78, 152);
+}
+
+
+.sub-header{
+    padding: 15px;
+    border-bottom: 1px solid rgba(150, 147, 147, 0.7);
+}
+.sub-header > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 22px;
+    color: rgba(27, 27, 27, 0.852);
+    /* text-decoration-line: underline;
+    text-underline-offset: 20px; */
+}
+
+.sub-header-menu :nth-child(1):hover{
+    color: rgb(253, 35, 126);
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 20px;
+    text-decoration-color: rgb(253, 35, 126);
+}
+
+
+.modal-1 ul, .modal-2 ul, .modal-3 ul, .modal-4 ul, .modal-5 ul, .modal-6 ul, .modal-7 ul, .modal-8 ul, .modal-9 ul{
+    list-style: none;
+    padding: 10px 20px;
+    line-height: 40px;
+    text-decoration-line: none;
+}
+
+.modal-1 ul li,
+.modal-2 ul li,
+.modal-3 ul li,
+.modal-4 ul li,
+.modal-5 ul li,
+.modal-6 ul li,
+.modal-7 ul li,
+.modal-8 ul li,
+.modal-9 ul li{ 
+    padding: 0 10px;
+    color: black;
+    text-decoration-line: none;
+}
+
+.modal-1 ul :nth-child(1),
+.modal-2 ul :nth-child(1),
+.modal-3 ul :nth-child(1),
+.modal-4 ul :nth-child(1),
+.modal-5 ul :nth-child(1),
+.modal-6 ul :nth-child(1),
+.modal-7 ul :nth-child(1),
+.modal-8 ul :nth-child(1),
+.modal-9 ul :nth-child(1)
+{
+    color: rgb(253, 35, 126);
+    padding: 10px;
+}
+
+.modal-1 > :nth-child(even),
+.modal-2 > :nth-child(even),
+.modal-3 > :nth-child(even),
+.modal-4 > :nth-child(even),
+.modal-5 > :nth-child(even),
+.modal-6 > :nth-child(even),
+.modal-7 > :nth-child(even),
+.modal-8 > :nth-child(even),
+.modal-9 > :nth-child(even){
+    background-color: rgba(230, 228, 228, 0.377);
+}
+
+.modal-1{
+    position: absolute;
+    border: 0.5px solid rgb(158, 157, 157);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.5px rgb(158, 157, 157);
+    border-top: none;
+    top: 150px;
+    left: 15px;
+    width: 98vw;
+    display: none;
+}
+
+.modal-2{
+    position: absolute;
+    border: 0.5px solid rgb(158, 157, 157);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.5px rgb(158, 157, 157);
+    border-top: none;
+    top: 150px;
+    left: 15px;
+    width: 98vw;
+    display: none; 
+}
+
+.modal-3{
+    position: absolute;
+    border: 0.5px solid rgb(158, 157, 157);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.5px rgb(158, 157, 157);
+    border-top: none;
+    top: 150px;
+    left: 15px;
+    width: 98vw;
+    display: none; 
+}
+
+.modal-4{
+    position: absolute;
+    border: 0.5px solid rgb(158, 157, 157);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.5px rgb(158, 157, 157);
+    border-top: none;
+    top: 150px;
+    left: 15px;
+    width: 98vw;
+    display: none; 
+}
+
+.modal-5{
+    position: absolute;
+    border: 0.5px solid rgb(158, 157, 157);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.5px rgb(158, 157, 157);
+    border-top: none;
+    top: 150px;
+    left: 15px;
+    width: 98vw;
+    display: none; 
+}
+
+.modal-6{
+    position: absolute;
+    border: 0.5px solid rgb(158, 157, 157);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.5px rgb(158, 157, 157);
+    border-top: none;
+    top: 150px;
+    left: 15px;
+    width: 98vw;
+    display: none;
+}
+
+.modal-7{
+    position: absolute;
+    border: 0.5px solid rgb(158, 157, 157);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.5px rgb(158, 157, 157);
+    border-top: none;
+    top: 150px;
+    left: 15px;
+    width: 98vw;
+    display: none;
+}
+
+.modal-8{
+    position: absolute;
+    border: 0.5px solid rgb(158, 157, 157);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.5px rgb(158, 157, 157);
+    border-top: none;
+    top: 150px;
+    left: 15px;
+    width: 98vw;
+    display: none;
+}
+
+.modal-9{
+    position: absolute;
+    border: 0.5px solid rgb(158, 157, 157);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.5px rgb(158, 157, 157);
+    border-top: none;
+    top: 150px;
+    left: 15px;
+    width: 98vw;
+    display: none;
+}
+
+.menu-1:hover .modal-1,
+.menu-2:hover .modal-2,
+.menu-3:hover .modal-3,
+.menu-4:hover .modal-4,
+.menu-5:hover .modal-5,
+.menu-6:hover .modal-6,
+.menu-7:hover .modal-7,
+.menu-8:hover .modal-8,
+.menu-9:hover .modal-9
+{
+    display: flex;
+}
+
