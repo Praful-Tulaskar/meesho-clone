@@ -92,7 +92,7 @@ http.onload= function(){
 
 for(let a of arr){
     a.addEventListener('click', ()=>{
-        window.location.href= ("http://127.0.0.1:5501/pages/product.html");
+        window.location.href= ("http://127.0.0.1:5500/pages/product.html");
         
     })
 }
@@ -149,3 +149,5 @@ for(let a of arr){
 //     return a*2;
 // })
 // console.log(b);
+
+

@@ -386,3 +386,26 @@
     background-color: rgb(255, 255, 255);
 }
 
+
+
+@media only screen and (max-width:1200px) and (min-width:510px) {
+
+    .header{
+        display: none;
+    }
+
+    .sub-header{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:510px) {
+    .header{
+        display: none;
+    }
+
+    .sub-header{
+        display: none;
+    }
+}
