@@ -88,6 +88,14 @@ http.onload= function(){
         </div>
             `
             document.querySelector('.right-flex').innerHTML += output;
+            const arr = document.querySelectorAll('.box-pro');
+
+for(let a of arr){
+    a.addEventListener('click', ()=>{
+        window.location.href= ("http://127.0.0.1:5501/pages/product.html");
+        
+    })
+}
         }
     }
 }
@@ -100,3 +108,44 @@ for(let a of arr){
         
     })
 }
+
+
+window.onload = async () => {
+
+    const result = await fetch(`https://prakash-dey.github.io/api/ecommerce.json`);
+
+    const data = await result.json();
+
+    // console.log(data);
+    // console.log(document.querySelector('.box-pro'));
+
+    
+    document.querySelector('.box-pro').insertAdjacentHTML('beforeend', data.map((item) => {
+        // const date = new Date(item.creationDatetime);
+        // console.log('inside map')
+        return `<div class="box-pro "><img src="${item.image} " alt=" ">
+        <div class="more ">+3 More</div>
+        <div class="pro-detail ">${item.name}</div>
+        <div class="rate ">${item.price} <span>onwards</span></div>
+        <div class="free-del "><button>Free Delivery</button></div>
+        <div class="rev "><button>${item.rating.rate}</button>
+            <span>${item.rating.count}Reviews</span>
+        </div>
+    </div>`
+    const arr = document.querySelectorAll('.box-pro');
+
+for(let a of arr){
+    a.addEventListener('click', ()=>{
+        window.location.href= ("http://127.0.0.1:5501/pages/product.html");
+        
+    })
+}
+
+    }).join("")
+    )}
+// let a =[3, 56, 8, 9]
+
+// b =a.map((a)=>{
+//     return a*2;
+// })
+// console.log(b);

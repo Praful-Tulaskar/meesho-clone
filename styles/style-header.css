@@ -234,6 +234,7 @@
     padding: 0 10px;
     color: black;
     text-decoration-line: none;
+    background-color: rgb(255, 255, 255);
 }
 
 .modal-1 ul :nth-child(1),
@@ -246,6 +247,7 @@
 .modal-8 ul :nth-child(1),
 .modal-9 ul :nth-child(1)
 {
+    background-color: rgb(255, 255, 255);
     color: rgb(253, 35, 126);
     padding: 10px;
 }
@@ -381,5 +383,6 @@
 .menu-9:hover .modal-9
 {
     display: flex;
+    background-color: rgb(255, 255, 255);
 }
 
