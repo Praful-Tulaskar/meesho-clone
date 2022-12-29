@@ -6,7 +6,7 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -299,7 +299,7 @@ body {
 
 .res-bottom {
     height: 60px;
-    min-width: 100%;
+    min-width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
