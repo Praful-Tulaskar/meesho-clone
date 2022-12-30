@@ -23,13 +23,13 @@
     font-size: 1.5rem;
     color: rgba(150, 147, 147, 0.952);
     position: absolute;
-    left: 225px;
+    left: 250px;
     top: 5px;
     border: 1px solid rgba(150, 147, 147, 0.7);
     border-right: none;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    padding: 28px;
+    padding: 17px;
 }
 
 
