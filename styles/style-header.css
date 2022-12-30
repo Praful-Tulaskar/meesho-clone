@@ -23,8 +23,13 @@
     font-size: 1.5rem;
     color: rgba(150, 147, 147, 0.952);
     position: absolute;
-    left: 240px;
-    top: 25px;
+    left: 225px;
+    top: 5px;
+    border: 1px solid rgba(150, 147, 147, 0.7);
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 28px;
 }
 
 
@@ -34,13 +39,15 @@
 }
 
 .header-leftside input{
-    width: 500px;
+    width: 450px;
     font-size: 1.25rem;
     padding: 28px 5px;
-    border-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-color: rgba(150, 147, 147, 0.7);
-    margin-left: 20px;
+    margin-left: 100px;
     outline: none;
+    border-left: none;
 }
 
 .header-rightside{
@@ -122,7 +129,7 @@
 
 .user-section-text{
     font-size: 22px;
-    
+    padding-bottom: 10px;
 }
 
 .user-section-icon{
@@ -135,7 +142,7 @@
 
 .user-profile-dropdown{
     position: absolute;
-    top: 135%;
+    top: 100%;
     right: -80px;
     border: 1px solid rgba(150, 147, 147, 0.7);
     border-radius: 5px;
