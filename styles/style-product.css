@@ -156,6 +156,7 @@
     box-shadow: 1px 1px rgb(214, 208, 208);
     margin: 15px;
     padding: 20px;
+    line-height: 50px;
 }
 
 .select-size p{
@@ -163,13 +164,30 @@
     font-weight: 500;
 }
 
-.select-size button{
+/* .select-size div{
+    margin: 20px 0px;
+    height: 2vh;
+} */
+
+/* .select-size button{
     min-width: 50px;
     font-size: 20px;
     background-color: white;
     padding: 5px 15px;
     margin: 20px 10px;
     border-radius: 20px;
+} */
+
+.size-radio-btn{
+    min-width: 50px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 20px;
+    /* background-color: white; */
+    padding: 5px 15px;
+    margin: 20px 10px;
+    border-radius: 20px;
+    border: 2px solid black;
 }
 
 .product-info{

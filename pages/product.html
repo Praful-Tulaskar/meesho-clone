@@ -39,12 +39,25 @@
 
             <div class="select-size">
                 <p>Select Size</p>
-                <button>S</button>
+                <!-- <button>S</button>
                 <button>M</button>
                 <button>L</button>
                 <button>XL</button>
                 <button>XXL</button>
-                <button>XXXL</button>
+                <button>XXXL</button> -->
+                
+                <input type="radio" name="size" value="S" hidden id="S-size">
+                <label for="S-size" class="size-radio-btn">S</label>
+                <input type="radio" name="size" value="M" hidden id="M-size">
+                <label for="M-size" class="size-radio-btn">M</label>
+                <input type="radio" name="size" value="L" hidden id="L-size">
+                <label for="L-size" class="size-radio-btn">L</label>
+                <input type="radio" name="size" value="XL" hidden id="XL-size">
+                <label for="XL-size" class="size-radio-btn">XL</label>
+                <input type="radio" name="size" value="XXL" hidden id="XXL-size">
+                <label for="XXL-size" class="size-radio-btn">XXL</label>
+                <input type="radio" name="size" value="XXXL" hidden id="XXXL-size">
+                <label for="XXXL-size" class="size-radio-btn">XXXL</label>
             </div>
 
             <div class="product-info">
@@ -61,5 +74,21 @@
 
     </div>
 
+    <script>
+
+        const sizeBtns = document.querySelectorAll('.size-radio-btn');
+        let checkBtn = 0;
+        let size;
+
+        sizebtns.forEach((item, i) => {
+            item.addEventListener('click', () => {
+                sizeBtns[checkBtn].classList.remove('check');
+                item.classList.add('check');
+                checkBtn = i;
+                size = item.innerHTML;
+            })
+        })
+
+    </script>
 </body>
 </html>
