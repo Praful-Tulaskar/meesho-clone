@@ -74,19 +74,14 @@
 
     </div>
 
+   
     <script>
 
-        const sizeBtns = document.querySelectorAll('.size-radio-btn');
-        let checkBtn = 0;
-        let size;
+        let addBtn = document.getElementById('addToCart-btn');
 
-        sizebtns.forEach((item, i) => {
-            item.addEventListener('click', () => {
-                sizeBtns[checkBtn].classList.remove('check');
-                item.classList.add('check');
-                checkBtn = i;
-                size = item.innerHTML;
-            })
+        addBtn.addEventListener('click', (e) => {
+            addBtn.innerText = "Added";
+            addBtn.style.backgroundColor = "lightgreen";
         })
 
     </script>
