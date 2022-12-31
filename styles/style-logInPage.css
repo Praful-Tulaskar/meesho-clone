@@ -23,8 +23,13 @@
     font-size: 1.5rem;
     color: rgba(150, 147, 147, 0.952);
     position: absolute;
-    left: 240px;
-    top: 25px;
+    left: 235px;
+    top: 5px;
+    border: 1px solid rgba(150, 147, 147, 0.7);
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 18px;
 }
 
 
@@ -34,12 +39,16 @@
 }
 
 .header-leftside input{
-    width: 500px;
+    width: 450px;
     font-size: 1.25rem;
     padding: 18px 5px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     border-color: rgba(150, 147, 147, 0.7);
-    margin-left: 20px;
+    margin-left: 80px;
+    outline: none;
+    border-left: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 
@@ -177,6 +186,7 @@ main{
     transform: translateY(-35px);
     font-size: 20px;
     color: rgb(255, 78, 152);
+    
 }
 
 #mobile-No span{
