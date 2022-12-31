@@ -23,6 +23,15 @@
     font-size: 1.5rem;
     color: rgba(150, 147, 147, 0.952);
     position: absolute;
+
+    left: 200px;
+    top: 4.9px;
+    border: 2px solid rgba(150, 147, 147, 0.7);
+    border-right: none;
+    padding: 17.5px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-left: 20px;
     left: 250px;
     top: 5px;
     border: 1px solid rgba(150, 147, 147, 0.7);
@@ -34,13 +43,21 @@
 
 
 .header-leftside img{
-    width: 200px;
+    max-width: 200px;
     cursor: pointer;
 }
 
 .header-leftside input{
     width: 450px;
     font-size: 1.25rem;
+
+    padding: 18px 5px;
+    border-radius: 8px;
+    border-color: rgba(150, 147, 147, 0.7);
+    margin-left: 70px;
+    border-left: none;
+    outline: none;
+
     padding: 28px 5px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -149,6 +166,7 @@
     box-shadow: 1px 1px 2px 2px rgb(158, 157, 157);
     background-color: white;
     display: none;
+    border-top: none;
 }
 
 #user-section > :nth-child(1):hover .user-profile-dropdown{
