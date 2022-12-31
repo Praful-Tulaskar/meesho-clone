@@ -1177,6 +1177,10 @@ main {
             flex-wrap: wrap;
             align-items: center;
         }
+
+        .for-sec{
+            display: none;
+        }
     }
 
     @media screen and (max-width:510px) {
@@ -1232,6 +1236,22 @@ main {
         .footer-col div {
             max-width: 95vw;
             /* min-width: 95vw; */
+        }
+
+        .for-sec{
+            display: none;
+        }
+
+        .main-header{
+            display: none;
+        }
+
+        .banner-4-section{
+            display: none;
+        }
+
+        .banner-5{
+            display: none;
         }
 
     }
